@@ -1,0 +1,132 @@
+@use "ali";
+@use "all";
+@use "bdbdb";
+// @import url("_all.scss");
+.h-500{
+    height: 500px;
+}
+
+
+.custom{
+    background-color: lightblue;
+    align-items: flex-start;
+}
+.arrow{
+    width: 25px;
+    border-radius: 90rem;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10rem;
+    right: 30px;
+    // box-shadow: 1px 1px 5px #2c2c2c;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+.py-4
+{
+    padding: 4rem;
+}
+.py-12
+{
+    padding: 12rem;
+}
+.py-8
+{
+    padding: 8rem;
+}
+.h-14{
+    height: 3.5rem;
+}
+header{
+    box-shadow: 5px 5px 5px 2px rgb(88, 171, 174);
+        & ul{
+            font-style: italic;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+                & a{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    padding: 1rem;
+                    font-style: italic;
+                }
+        }
+}
+.bg-grad-blue{
+    background: linear-gradient(90deg,#2f0884,#1e94e2);
+    position: relative;
+}
+.navh{
+  padding: 2rem;
+}
+.nav1{
+    & ul{
+        color: rgb(255, 255, 255);
+        & a{
+            color: rgb(255, 255, 255);
+            padding: 0.5rem;
+        }
+    }
+}
+.child{
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: -1rem;
+       
+}
+.parent:hover{
+        & .child{
+            display: flex;
+        }
+    
+}
+li.parent{
+    position: relative;
+}
+li.parent:hover::after{
+    content: "";
+    border: 10px solid;
+    border-color: transparent transparent beige transparent ;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+  
+}
+.header-search{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.626);
+    font-size: 1rem;
+        &:active{
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.626);
+            font-size: 1rem;
+           
+        }
+            &:focus{
+                border: none;
+                box-shadow: none;
+                background-color: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.626);
+                font-size: 1rem;
+                box-shadow: none;
+            }
+            &:focus-visible{
+                border: none;
+                box-shadow: none;
+                background-color: transparent;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.626) !important;
+                font-size: 1rem;
+                outline: none !important;
+            }
+}
